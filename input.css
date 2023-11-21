@@ -1,4 +1,15 @@
 ﻿@tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+    .title {
+        @apply font-cormorant text-[40px] font-normal;
+    }
+    .review {
+        @apply text-[13px] italic font-light pb-[10px];
+    }
+    .cite {
+        @apply text-[20px] font-semibold;
+    }
+}
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap')
