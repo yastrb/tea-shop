@@ -11,15 +11,14 @@
     <title>Tea Shop</title>
 </head>
 
-<body class=" color-[#151618]">
-
+<body class=" color-[#151618] relative">
+    <div class=" absolute left-0 right-0 top-0 bottom-0 bg-black/50 h-[100vh]" id="background"></div>
     <header class=" w-screen ">
-
         <div
             class=" p-[10px] md:px-16 md:py-[30px] max-h-[76px] md:min-h-[165px] max-w-[1240px] mx-auto  flex items-center justify-between ">
 
             <button class=" lg:hidden" id="menu">
-                    <img src="/images/burger.png" alt="">
+                <img src="/images/burger.png" alt="">
             </button>
 
             <a class="" href="#">
@@ -28,8 +27,8 @@
             <!-- Menu -->
 
             <nav class="navigation ">
-                <div
-                    class="lg:relative absolute bg-white left-[50%] translate-x-[-50%] right-0 lg:w-full w-[360px]  top-0" id="nav">
+                <div class="lg:relative absolute bg-white left-[50%] translate-x-[-50%] right-0 lg:w-full w-[360px]  top-0  transition-all duration-700"
+                    id="nav">
                     <button class="lg:hidden  p-5 " id="close">
                         <img src="/images/close.svg" alt="close">
                     </button>
@@ -51,20 +50,20 @@
                             <a href="#">Pu-erh</a>
                         </li>
                     </ul>
-                        <!-- Mobile -->
+                    <!-- Mobile -->
 
-                        <ul
-                            class="lg:hidden border-t-2 border-[#F7F2EA] mx-8 flex flex-col justify-center text-center text-sm font-light gap-[35px] my-[60px]">
-                            <li>
-                                <a href="">Contact Us</a>
-                            </li>
-                            <li>
-                                <a href="">Our Blog</a>
-                            </li>
-                            <li>
-                                <a href="">Shipping and Delivery</a>
-                            </li>
-              
+                    <ul
+                        class="lg:hidden border-t-2 border-[#F7F2EA] mx-8 flex flex-col justify-center text-center text-sm font-light gap-[35px] my-[60px]">
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="">Our Blog</a>
+                        </li>
+                        <li>
+                            <a href="">Shipping and Delivery</a>
+                        </li>
+
 
                         <!-- Mobile user -->
                         <li class="bg-[#F7F2EA] w-full py-5 lg:hidden">
@@ -106,7 +105,6 @@
 
         </div>
     </header>
-
     <main class="">
         <section class=" bg-[url('/images/banner.jpg')] bg-no-repeat bg-bottom bg-center bg-cover">
             <div class=" min-h-[500px] flex flex-col justify-end">
@@ -126,7 +124,7 @@
         </blockquote>
     </main>
 
-
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
