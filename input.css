@@ -6,7 +6,7 @@
         @apply font-cormorant text-[40px] font-normal;
     }
     .review {
-        @apply text-[13px] italic font-light pb-[10px];
+        @apply text-[16px] italic font-light pb-[10px];
     }
     .cite {
         @apply text-[20px] font-semibold;

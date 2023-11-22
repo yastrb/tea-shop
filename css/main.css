@@ -542,7 +542,7 @@ video {
 
 .review {
   padding-bottom: 10px;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 300;
   font-style: italic;
 }
@@ -647,10 +647,6 @@ video {
   width: 208px;
 }
 
-.w-\[220px\] {
-  width: 220px;
-}
-
 .w-\[360px\] {
   width: 360px;
 }
@@ -669,10 +665,6 @@ video {
 
 .max-w-\[1240px\] {
   max-width: 1240px;
-}
-
-.max-w-\[340px\] {
-  max-width: 340px;
 }
 
 .max-w-\[704px\] {
@@ -794,11 +786,6 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.py-\[50px\] {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
 .pt-\[50px\] {
   padding-top: 50px;
 }
@@ -863,10 +850,6 @@ video {
 
   .sm\:block {
     display: block;
-  }
-
-  .sm\:flex {
-    display: flex;
   }
 
   .sm\:w-\[220px\] {
@@ -1001,10 +984,6 @@ video {
 
   .lg\:gap-16 {
     gap: 4rem;
-  }
-
-  .lg\:gap-8 {
-    gap: 2rem;
   }
 
   .lg\:gap-6 {
