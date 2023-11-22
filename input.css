@@ -12,7 +12,19 @@
         @apply text-[20px] font-semibold;
     }
     .blog__item {
-        @apply flex  flex-col ;
+        @apply flex  flex-col mb-[30px] ;
+    }
+    .blog__item-content {
+        @apply flex flex-col;
+    }
+    .prioritise__item {
+        @apply flex flex-col;
+    }
+    .prioritise__title {
+        @apply text-[30px] font-light mb-[10px];
+    }
+    .prioritise__text {
+        @apply text-xl font-bold mb-[39px] ;
     }
 }
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap')

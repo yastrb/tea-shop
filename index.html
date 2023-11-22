@@ -11,7 +11,7 @@
     <title>Tea Shop</title>
 </head>
 
-<body class=" color-[#151618] relative">
+<body class=" text-[#151618] relative">
     <div class=" absolute left-0 right-0 top-0 bottom-0 bg-black/50 h-[100vh] hidden" id="background"></div>
     <header class=" w-screen ">
         <div
@@ -227,6 +227,7 @@
             </div>
         </section>
 
+        <!-- Blog -->
         <section>
             <div class=" mx-auto max-w-[1240px] pt-[50px]">
                 <h3 class=" font-cormorant text-2xl text-center mb-[30px]">Our Tea Blog</h3>
@@ -265,9 +266,80 @@
                         </div>
                     </li>
                 </ul>
+                <a href="">View all</a>
             </div>
         </section>
 
+        <!-- Subscribe -->
+        <section class=" bg-main">
+            <div class=" px-4 mx-auto">
+                <h2 class=" font-cormorant text-[40px] ">Want to know more?</h2>
+                <div>
+                    <p>
+                        Join our mailing list and stay up-to-date with the
+                        latest news, promotions, and exclusive offers from our tea store. 
+                        Be the first to know about new tea arrivals, seasonal blends, 
+                        and special discounts. Don't miss out on the tea-rrific perks - sign up today!
+                    </p>
+                    <form action="">
+                        <input class=" bg-main" type="email">
+                        <button type="submit">Join</button>
+                        <label for="">
+                            <input class="" type="checkbox" placeholder="name@email.com">
+                            <span></span>
+                            <p>We take your privacy seriously and are committed to protecting your 
+                                personal information. By subscribing to our mailing list, you are consenting 
+                                to receive periodic emails from us about our products, promotions, 
+                                and other tea-related information.</p>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prioritise -->
+        <section>
+            <div class=" mx-auto max-w-[1240px] pt-[60px] px-4">
+                <h3 class=" font-cormorant text-[40px] text-center mb-[30px]">We Prioritise</h3>
+                <div>
+                    <ul class=" grid gap-[50px] md:grid-cols-2 2xl:grid-cols-4">
+
+                        <li class="prioritise__item">
+                            <h4 class="prioritise__title">Single garden teas</h4>
+                            <p class="prioritise__text">Complete transparency</p>
+                            <div>
+                                <img src="/images/img1.svg" alt="">
+                            </div>
+                        </li>
+                        
+                        <li class="prioritise__item">
+                            <h4 class="prioritise__title">Only Loose leaf tea</h4>
+                            <p class="prioritise__text">Best Drinking Experience</p>
+                            <div>
+                                <img src="/images/img2.svg" alt="">
+                            </div>
+                        </li>
+                        
+                        <li class="prioritise__item">
+                            <h4 class="prioritise__title">Customer support</h4>
+                            <p class="prioritise__text">No bots, no automated replies</p>
+                            <div>
+                                <img src="/images/img3.svg" alt="">
+                            </div>
+                        </li>
+
+                        <li class="prioritise__item">
+                            <h4 class="prioritise__title">Fast shipping</h4>
+                            <p class="prioritise__text">Save, Convenient, Reliable</p>
+                            <div>
+                                <img src="/images/img4.svg" alt="">
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="/js/main.js"></script>
