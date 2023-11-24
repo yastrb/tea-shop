@@ -1,7 +1,18 @@
 ﻿@tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes changeFontWeight {
+    from {
+        font-weight: lighter;
+    }
+    to {
+        font-weight: bold;
+    }
+};
+
 @layer components {
+
     .title {
         @apply font-cormorant text-[40px] font-normal;
     }
@@ -18,13 +29,27 @@
         @apply flex flex-col basis-1/2;
     }
     .blog__item-title {
-        @apply text-2xl font-cormorant font-normal;
+        @apply text-2xl font-cormorant font-normal mb-[5px] sm:mb-[10px];
     }
     .blog__item-author {
         @apply text-sm font-light;
     }
     .blog__item-link {
-        @apply text-[13px] font-light
+        @apply relative text-[13px] font-light mt-auto;
+    }
+
+    .blog__item-link::after {
+        content: "";
+        background-image: url(/images/arrow.svg);
+        position: absolute;
+        bottom: 3px;
+        margin-left: 8px;
+        width: 5px;
+        height: 10px;
+        transition: transform 0.3s ease;
+    }
+    .blog__item-link:hover::after {
+        transform: translateX(5px); 
     }
     .prioritise__item {
         @apply flex flex-col;

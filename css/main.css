@@ -573,10 +573,17 @@ video {
 }
 
 .blog__item-title {
+  margin-bottom: 5px;
   font-family: Cormorant, serif;
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 400;
+}
+
+@media (min-width: 480px) {
+  .blog__item-title {
+    margin-bottom: 10px;
+  }
 }
 
 .blog__item-author {
@@ -586,8 +593,25 @@ video {
 }
 
 .blog__item-link {
+  position: relative;
+  margin-top: auto;
   font-size: 13px;
   font-weight: 300;
+}
+
+.blog__item-link::after {
+  content: "";
+  background-image: url(/images/arrow.svg);
+  position: absolute;
+  bottom: 3px;
+  margin-left: 8px;
+  width: 5px;
+  height: 10px;
+  transition: transform 0.3s ease;
+}
+
+.blog__item-link:hover::after {
+  transform: translateX(5px);
 }
 
 .prioritise__item {
@@ -858,6 +882,11 @@ video {
   padding-right: 10px;
 }
 
+.px-\[45px\] {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -866,11 +895,6 @@ video {
 .py-\[50px\] {
   padding-top: 50px;
   padding-bottom: 50px;
-}
-
-.px-\[45px\] {
-  padding-left: 45px;
-  padding-right: 45px;
 }
 
 .pb-\[30px\] {
@@ -941,6 +965,16 @@ video {
 
 .duration-700 {
   transition-duration: 700ms;
+}
+
+@keyframes changeFontWeight {
+  from {
+    font-weight: lighter;
+  }
+
+  to {
+    font-weight: bold;
+  }
 }
 
 @media (min-width: 480px) {
@@ -1094,6 +1128,10 @@ video {
     position: relative;
   }
 
+  .lg\:grid {
+    display: grid;
+  }
+
   .lg\:hidden {
     display: none;
   }
@@ -1104,6 +1142,10 @@ video {
 
   .lg\:max-w-\[790px\] {
     max-width: 790px;
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-5 {
@@ -1120,6 +1162,20 @@ video {
 
   .lg\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .lg\:gap-x-5 {
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
+  }
+
+  .lg\:gap-y-\[60px\] {
+    row-gap: 60px;
+  }
+
+  .lg\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .lg\:py-\[150px\] {
@@ -1157,5 +1213,14 @@ video {
 
   .\32xl\:gap-\[100px\] {
     gap: 100px;
+  }
+
+  .\32xl\:gap-x-\[58px\] {
+    -moz-column-gap: 58px;
+         column-gap: 58px;
+  }
+
+  .\32xl\:gap-y-\[40px\] {
+    row-gap: 40px;
   }
 }
