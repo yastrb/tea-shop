@@ -556,11 +556,38 @@ video {
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 480px) {
+  .blog__item {
+    flex-direction: row;
+    gap: 1.25rem;
+  }
 }
 
 .blog__item-content {
   display: flex;
+  flex-basis: 50%;
   flex-direction: column;
+}
+
+.blog__item-title {
+  font-family: Cormorant, serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+.blog__item-author {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 300;
+}
+
+.blog__item-link {
+  font-size: 13px;
+  font-weight: 300;
 }
 
 .prioritise__item {
@@ -704,6 +731,10 @@ video {
   max-width: 704px;
 }
 
+.basis-1\/2 {
+  flex-basis: 50%;
+}
+
 .translate-x-\[-50\%\] {
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -757,12 +788,12 @@ video {
   gap: 35px;
 }
 
-.gap-\[70px\] {
-  gap: 70px;
-}
-
 .gap-\[50px\] {
   gap: 50px;
+}
+
+.gap-\[70px\] {
+  gap: 70px;
 }
 
 .border-t-2 {
@@ -835,6 +866,11 @@ video {
 .py-\[50px\] {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.px-\[45px\] {
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 .pb-\[30px\] {
@@ -982,10 +1018,6 @@ video {
     margin-bottom: 40px;
   }
 
-  .md\:grid {
-    display: grid;
-  }
-
   .md\:min-h-\[165px\] {
     min-height: 165px;
   }
@@ -1006,12 +1038,12 @@ video {
     max-width: 684px;
   }
 
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:gap-x-\[76px\] {
@@ -1033,19 +1065,14 @@ video {
     padding-right: 1.25rem;
   }
 
-  .md\:py-\[30px\] {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .md\:py-3 {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-
   .md\:py-\[120px\] {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+
+  .md\:py-\[30px\] {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .md\:text-6xl {

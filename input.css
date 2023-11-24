@@ -12,10 +12,19 @@
         @apply text-[20px] font-semibold;
     }
     .blog__item {
-        @apply flex  flex-col mb-[30px] ;
+        @apply flex  flex-col sm:flex-row gap-[10px]  sm:gap-5  mb-[30px] ;
     }
     .blog__item-content {
-        @apply flex flex-col;
+        @apply flex flex-col basis-1/2;
+    }
+    .blog__item-title {
+        @apply text-2xl font-cormorant font-normal;
+    }
+    .blog__item-author {
+        @apply text-sm font-light;
+    }
+    .blog__item-link {
+        @apply text-[13px] font-light
     }
     .prioritise__item {
         @apply flex flex-col;
