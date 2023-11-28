@@ -699,8 +699,16 @@ video {
   margin-bottom: 30px;
 }
 
+.mt-\[34px\] {
+  margin-top: 34px;
+}
+
 .flex {
   display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
 }
 
 .grid {
@@ -717,6 +725,10 @@ video {
 
 .h-\[208px\] {
   height: 208px;
+}
+
+.h-\[51px\] {
+  height: 51px;
 }
 
 .max-h-\[76px\] {
@@ -741,6 +753,14 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[149px\] {
+  width: 149px;
+}
+
+.w-\[152px\] {
+  width: 152px;
 }
 
 .max-w-\[100px\] {
@@ -780,8 +800,16 @@ video {
   flex-wrap: wrap;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-end {
@@ -820,6 +848,18 @@ video {
   gap: 70px;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-2\.5 {
+  gap: 0.625rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
 .border-t-2 {
   border-top-width: 2px;
 }
@@ -839,8 +879,60 @@ video {
   background-color: rgb(247 242 234 / var(--tw-bg-opacity));
 }
 
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[url\[\]\] {
+  background-color: url[];
+}
+
+.bg-\[ur\] {
+  background-color: ur;
+}
+
+.bg-\[url\] {
+  background-color: url;
+}
+
+.bg-\[bg-\\\[url\\\(\\\'\\\/images\\\/banner\\\.jpg\\\'\\\)\\\]\] {
+  background-color: bg-\[url\(\'\/images\/banner\.jpg\'\)\];
+}
+
+.bg-\[url\{\}\] {
+  background-color: url{};
+}
+
 .bg-\[url\(\'\/images\/banner\.jpg\'\)\] {
   background-image: url('/images/banner.jpg');
+}
+
+.bg-\[url\(\)\] {
+  background-image: url();
+}
+
+.bg-\[url\(\/\)\] {
+  background-image: url(/);
+}
+
+.bg-\[url\(\.\/\)\] {
+  background-image: url(./);
+}
+
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
+
+.bg-\[url\(\'\/\'\)\] {
+  background-image: url('/');
+}
+
+.bg-\[url\(\'\/images\/\'\)\] {
+  background-image: url('/images/');
+}
+
+.bg-\[url\(\'\/images\/tea\.png\'\)\] {
+  background-image: url('/images/tea.png');
 }
 
 .bg-cover {
@@ -853,6 +945,10 @@ video {
 
 .bg-center {
   background-position: center;
+}
+
+.bg-right-bottom {
+  background-position: right bottom;
 }
 
 .bg-no-repeat {
@@ -897,6 +993,16 @@ video {
   padding-bottom: 50px;
 }
 
+.px-\[41px\] {
+  padding-left: 41px;
+  padding-right: 41px;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .pb-\[30px\] {
   padding-bottom: 30px;
 }
@@ -934,6 +1040,11 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-light {
