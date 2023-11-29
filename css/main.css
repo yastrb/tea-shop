@@ -651,6 +651,12 @@ video {
   }
 }
 
+.footer-link {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
 .absolute {
   position: absolute;
 }
@@ -727,6 +733,10 @@ video {
   margin-bottom: 30px;
 }
 
+.mb-\[75px\] {
+  margin-bottom: 75px;
+}
+
 .mt-\[34px\] {
   margin-top: 34px;
 }
@@ -735,8 +745,8 @@ video {
   margin-bottom: ;
 }
 
-.mb-\[75px\] {
-  margin-bottom: 75px;
+.mb-\[40px\] {
+  margin-bottom: 40px;
 }
 
 .flex {
@@ -767,8 +777,16 @@ video {
   min-height: 500px;
 }
 
+.w-\[100px\] {
+  width: 100px;
+}
+
 .w-\[152px\] {
   width: 152px;
+}
+
+.w-\[155px\] {
+  width: 155px;
 }
 
 .w-\[208px\] {
@@ -888,6 +906,10 @@ video {
   gap: 70px;
 }
 
+.gap-\[73px\] {
+  gap: 73px;
+}
+
 .border {
   border-width: 1px;
 }
@@ -931,6 +953,14 @@ video {
 
 .bg-\[url\(\'\/images\/banner\.jpg\'\)\] {
   background-image: url('/images/banner.jpg');
+}
+
+.bg-\[url\(\'\/images\/mail\.svg\'\)\] {
+  background-image: url('/images/mail.svg');
+}
+
+.bg-\[url\(\'\/images\/phone\.svg\'\)\] {
+  background-image: url('/images/phone.svg');
 }
 
 .bg-cover {
@@ -1017,6 +1047,10 @@ video {
 
 .pl-\[14px\] {
   padding-left: 14px;
+}
+
+.pl-\[42px\] {
+  padding-left: 42px;
 }
 
 .pt-\[50px\] {
@@ -1384,6 +1418,12 @@ video {
   }
 }
 
+@media (min-width: 1280px) {
+  .xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 1536px) {
   .\32xl\:my-\[150px\] {
     margin-top: 150px;
@@ -1394,16 +1434,16 @@ video {
     margin-bottom: 150px;
   }
 
+  .\32xl\:mb-\[155px\] {
+    margin-bottom: 155px;
+  }
+
   .\32xl\:mb-\[50px\] {
     margin-bottom: 50px;
   }
 
   .\32xl\:mb-\[60px\] {
     margin-bottom: 60px;
-  }
-
-  .\32xl\:mb-\[155px\] {
-    margin-bottom: 155px;
   }
 
   .\32xl\:max-w-\[180px\] {

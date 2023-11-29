@@ -60,5 +60,8 @@
     .prioritise__text {
         @apply text-[10px] font-normal mb-[39px] uppercase sm:capitalize sm:text-xl sm:font-semibold ;
     }
+    .footer-link {
+        @apply text-base font-light;
+    }
 }
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap')
