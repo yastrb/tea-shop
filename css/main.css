@@ -749,6 +749,14 @@ video {
   margin-bottom: 40px;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mt-\[10px\] {
+  margin-top: 10px;
+}
+
 .flex {
   display: flex;
 }
@@ -1095,6 +1103,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-light {
