@@ -52,13 +52,13 @@
         transform: translateX(5px); 
     }
     .prioritise__item {
-        @apply flex flex-col;
+        @apply flex flex-col items-center;
     }
     .prioritise__title {
-        @apply text-[30px] font-light mb-[10px];
+        @apply text-xl font-light mb-[10px] leading-[30px] sm:text-3xl ;
     }
     .prioritise__text {
-        @apply text-xl font-bold mb-[39px] ;
+        @apply text-[10px] font-normal mb-[39px] uppercase sm:capitalize sm:text-xl sm:font-semibold ;
     }
 }
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap')

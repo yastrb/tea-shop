@@ -617,19 +617,38 @@ video {
 .prioritise__item {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .prioritise__title {
   margin-bottom: 10px;
-  font-size: 30px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-weight: 300;
+  line-height: 30px;
+}
+
+@media (min-width: 480px) {
+  .prioritise__title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 .prioritise__text {
   margin-bottom: 39px;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 700;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media (min-width: 480px) {
+  .prioritise__text {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
 }
 
 .absolute {
@@ -674,14 +693,14 @@ video {
   margin-right: auto;
 }
 
-.my-\[60px\] {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
 .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
+}
+
+.my-\[60px\] {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .mb-12 {
@@ -690,6 +709,10 @@ video {
 
 .mb-20 {
   margin-bottom: 5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 
 .mb-5 {
@@ -708,8 +731,12 @@ video {
   margin-top: 34px;
 }
 
-.mb-3 {
-  margin-bottom: 0.75rem;
+.mb-\[\] {
+  margin-bottom: ;
+}
+
+.mb-\[75px\] {
+  margin-bottom: 75px;
 }
 
 .flex {
@@ -853,8 +880,8 @@ video {
   gap: 35px;
 }
 
-.gap-\[50px\] {
-  gap: 50px;
+.gap-\[40px\] {
+  gap: 40px;
 }
 
 .gap-\[70px\] {
@@ -896,10 +923,6 @@ video {
 .bg-main {
   --tw-bg-opacity: 1;
   background-color: rgb(247 242 234 / var(--tw-bg-opacity));
-}
-
-.bg-opacity-50 {
-  --tw-bg-opacity: 0.5;
 }
 
 .bg-opacity-0 {
@@ -961,11 +984,6 @@ video {
 .px-\[45px\] {
   padding-left: 45px;
   padding-right: 45px;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .py-3 {
@@ -1066,10 +1084,6 @@ video {
   color: rgb(21 22 24 / var(--tw-text-opacity));
 }
 
-.opacity-0 {
-  opacity: 0;
-}
-
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1149,6 +1163,10 @@ video {
 
   .sm\:gap-12 {
     gap: 3rem;
+  }
+
+  .sm\:gap-\[50px\] {
+    gap: 50px;
   }
 
   .sm\:gap-\[6px\] {
@@ -1382,6 +1400,10 @@ video {
 
   .\32xl\:mb-\[60px\] {
     margin-bottom: 60px;
+  }
+
+  .\32xl\:mb-\[155px\] {
+    margin-bottom: 155px;
   }
 
   .\32xl\:max-w-\[180px\] {
