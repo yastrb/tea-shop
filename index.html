@@ -373,9 +373,9 @@
         </section>
 
         <footer class=" bg-main">
-            <div class=" pt-[50px] pb-3 px-[10px] max-w-[1220px] md:max-w-[648px] mx-auto">
-                <div class=" grid grid-cols-2 ">
-                        <!-- first block -->
+            <div class=" pt-[50px] pb-3 px-[10px] lg:px-5 max-w-[1220px] md:max-w-[648px] lg:max-w-[1040px] mx-auto">
+                <div class=" grid md:grid-cols-2 lg:grid-cols-[1fr,2fr] mb-[50px] md:mb-[70px] xl:mb-[60px] 2xl:mb-[100px] ">
+                    <!-- first block -->
                     <div class=" grid grid-cols-2 mb-[40px]">
                         <div class="futer1 w-[100px] flex flex-col gap-5">
                             <h4 class=" text-2xl font-normal mb-[10px] font-cormorant">Products</h4>
@@ -397,8 +397,8 @@
                             <a href="#" class="footer-link">Terms of Service</a>
                         </div>
                     </div>
-                        <!-- second block -->
-                    <div class=" grid xl:grid-cols-2 md:pl-[30px]">
+                    <!-- second block -->
+                    <div class=" grid lg:grid-cols-2 lg:gap-[55px] md:pl-[30px]">
                         <div class=" mb-[40px] ">
                             <p class="text-base font-light italic">
                                 “Tea is a journey. It can take you to new places and open
@@ -412,29 +412,44 @@
 
                         <div>
                             <h5 class="text-center text-2xl font-cormorant mb-[10px]">Stay In Touch</h5>
-                            <p class=" text-center text-[13px] mb-[10px]">Please feel free to contact us via the email of phone.
+                            <p class=" text-center text-[13px] mb-[10px]">Please feel free to contact us via the email
+                                of phone.
                                 We would be happy to hear from you!
                             </p>
-                            <div class=" ">
-                                <div class=" flex">
+                            <div class=" mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1">
+
+                                <div class=" flex justify-center md:justify-between items-center mb-[40px] sm:mb-0 md:mb-5">
+                                    <!-- logo -->
                                     <div class=" w-[57px] h-[91px]">
-                                        <a href="" >
-                                            <img class=" w-full bg-cover"  src="/images/logo.png" alt="logo">
+                                        <div>
+                                            <img class=" w-full bg-cover" src="/images/logo.svg" alt="logo">
+                                        </div>
+                                    </div>
+                                    <!-- contacts -->
+                                    <div class="ml-5 flex flex-col gap-3">
+                                        <a href="tel:+370 680 123456"
+                                            class="  bg-[url('/images/phone.svg')] bg-no-repeat pl-[42px] ">
+                                            +370 680 123456
+                                        </a>
+                                        <a href="mailto:info@tealuxe.com"
+                                            class=" bg-[url('/images/mail.svg')] bg-no-repeat pl-[42px]">
+                                            info@tealuxe.com
                                         </a>
                                     </div>
-                                    
-                                    <div class="ml-5">
-                                        <a href="tel:+370 680 123456"
-                                            class="  bg-[url('/images/phone.svg')] bg-no-repeat pl-[42px] ">  
-                                            +370 680 123456</a>
-                                        <a href="mailto:info@tealuxe.com"
-                                            class=" bg-[url('/images/mail.svg')] bg-no-repeat pl-[42px]">info@tealuxe.com</a>
-                                    </div>
                                 </div>
+                                <!-- socials -->
+                                <div class=" flex gap-5 items-center justify-center md:justify-end">
+                                    <div><img src="/images/facebook.svg" alt=""></div>
+                                    <div><img src="/images/youtube.svg" alt=""></div>
+                                    <div><img src="/images/instagram.svg" alt=""></div>
+                                    <div><img src="/images/twitter.svg" alt=""></div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- bottom -->
                 <div class=" flex gap-[53px] sm:gap-[153px] md:gap-[31px] lx:gap-[40px] 2xl:gap-[192px]">
                     <p class=" text-base font-light">© Tealuxe, 2023</p>
                     <div class=" flex gap-5 items-center">
