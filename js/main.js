@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         nav.style.top = '0';
         background.classList.remove('hidden');
         background.classList.add('block');
+
     });
 });
 
